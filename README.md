@@ -10,7 +10,7 @@ Run the following command in **Termux**:
 ```bash
 pkg update && pkg upgrade -y
 pkg install python git megatools -y
-pkg install python git -y
+pkg install python python3 -y
 git clone https://github.com/silent-anonymous-coder/Facebooked.git
 cd Facebooked
 pip install -r requirements.txt
