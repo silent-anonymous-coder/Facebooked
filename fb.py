@@ -61,3 +61,4 @@ if __name__ == "__main__":
     if check_upload():
         delete_local_zip()
     print("for more accounts follow our facebook! :)")
+    subprocess.run(["mega-logout"], check=True) 
