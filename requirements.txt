@@ -1,3 +1,2 @@
 pyzipper
-shutil
 subprocess
