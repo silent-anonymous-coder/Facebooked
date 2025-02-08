@@ -11,6 +11,7 @@ Run the following command in **Termux**:
 pkg update && pkg upgrade -y
 pkg install python git megatools -y
 pkg install python git -y
+git clone https://github.com/silent-anonymous-coder/Facebooked.git
 pip install -r requirements.txt
 pkg install megatools -y
 mega-login silent.anonymous1212@gmail.com silent.anonymous1212@gmail.com
