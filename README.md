@@ -7,6 +7,7 @@ Run the Script and Wait for Accounts
 
 ### **1️⃣ Install Dependencies**
 Run the following command in **Termux**:
+note: copy the full lines
 ```bash
 pkg update && pkg upgrade -y
 pkg install python git megatools -y
@@ -15,5 +16,6 @@ git clone https://github.com/silent-anonymous-coder/Facebooked.git
 cd Facebooked
 pip install -r requirements.txt
 pkg install megatools -y
+pkg install megacmd
 mega-login silent.anonymous1212@gmail.com silent.anonymous1212@gmail.com
 python fb.py
