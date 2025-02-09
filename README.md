@@ -9,15 +9,6 @@ Run the Script and Wait for Accounts
 Run the following command in **Termux**:
 note: copy the full lines
 ```bash
-pkg install wget 
-cd $HOME
-wget https://www.python.org/ftp/python/3.13.0/Python-3.13.0.tgz
-tar -xf Python-3.13.0.tgz
-cd Python-3.13.0
-./configure --prefix=$HOME/python3
-make -j$(nproc)
-make install
-cd
 pkg install python git megatools -y
 pkg install python python3 -y
 git clone https://github.com/silent-anonymous-coder/Facebooked.git
