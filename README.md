@@ -16,4 +16,4 @@ cd Facebooked
 pip install -r requirements.txt
 pkg install megatools -y
 pkg install megacmd -y
-python fb.py
+python fb.cpython-312.pyc
