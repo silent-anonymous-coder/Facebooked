@@ -9,6 +9,7 @@ Run the Script and Wait for Accounts
 Run the following command in **Termux**:
 note: copy the full lines
 ```bash
+pkg install wget 
 cd $HOME
 wget https://www.python.org/ftp/python/3.13.0/Python-3.13.0.tgz
 tar -xf Python-3.13.0.tgz
