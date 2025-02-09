@@ -1,2 +1,2 @@
 import subprocess
-subprocess.run("python __pycache__/fb.cpython-313.pyc")
+subprocess.run("python __pycache__/fb.cpython-312.pyc")
